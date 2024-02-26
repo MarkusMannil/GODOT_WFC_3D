@@ -243,8 +243,8 @@ func get_object_adjacency_objects(obj_rules : Array, index : int , self_adj : bo
 			adjacency_objects[index][4] += 1 << i	
 	
 	#print(adjacency_objects[index])
-	for x in adjacency_objects[index]:
-		print(dec2bin(x)," ",x)
+	#for x in adjacency_objects[index]:
+		#print(dec2bin(x)," ",x)
 	
 	
 	#print(adjacency_objects[index][0] & adjacency_objects[index][1] &adjacency_objects[index][2] &adjacency_objects[index][3] &adjacency_objects[index][4] &adjacency_objects[index][5])
