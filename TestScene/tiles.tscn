@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Kenny_skatepark_assets/blockCliff.dae" type="PackedScene" id=1]
+[ext_resource path="res://Kenny_skatepark_assets/blockDirt.dae" type="PackedScene" id=2]
+[ext_resource path="res://Kenny_skatepark_assets/blockSlope.dae" type="PackedScene" id=3]
+[ext_resource path="res://Kenny_skatepark_assets/block.dae" type="PackedScene" id=4]
+[ext_resource path="res://Kenny_skatepark_assets/blockSnow.dae" type="PackedScene" id=5]
+[ext_resource path="res://Kenny_skatepark_assets/blockSnowCliff.dae" type="PackedScene" id=6]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="block" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+
+[node name="blockCliff" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="blockDirt" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1 )
+
+[node name="blockSlope" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+
+[node name="blockSnow" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1 )
+
+[node name="blockSnowCliff" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0 )

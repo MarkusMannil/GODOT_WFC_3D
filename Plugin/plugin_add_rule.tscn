@@ -1,0 +1,28 @@
+[gd_scene format=2]
+
+[node name="MJEW" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 8.0
+
+[node name="Control" type="Control" parent="."]
+margin_right = 208.0
+margin_bottom = 312.0
+
+[node name="AddObject" type="Button" parent="Control"]
+margin_right = 200.0
+margin_bottom = 60.0
+text = "Add new object"
+
+[node name="EditObject" type="Button" parent="Control"]
+margin_top = 60.0
+margin_right = 200.0
+margin_bottom = 120.0
+text = "Edit object"
+icon_align = 1
+
+[node name="RemoveObject" type="Button" parent="Control"]
+margin_top = 120.0
+margin_right = 200.0
+margin_bottom = 180.0
+text = "Remove object"

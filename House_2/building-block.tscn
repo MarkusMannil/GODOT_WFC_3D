@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Plugin/Rules.gd" type="Script" id=1]
+[ext_resource path="res://kenney_modular-buildings/building-block.glb" type="PackedScene" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.568627, 0.960784, 0.611765, 1 )
+
+[node name="building-block" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+up = [ 1, 2 ]
+down = [ 1 ]
+forward = [ 1 ]
+backward = [ 1 ]
+right = [ 1 ]
+left = [ 1 ]
+
+[node name="building-block" parent="." index="0"]
+material/0 = SubResource( 1 )

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://kenney_modular-buildings/building-corner-window-top-round.glb" type="PackedScene" id=1]
+[ext_resource path="res://Rule.gd" type="Script" id=2]
+
+[node name="Corner" instance=ExtResource( 1 )]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 0 )
+script = ExtResource( 2 )
+up = [ 5, 4 ]
+down = [ 1, 5 ]
+forward = [ 1 ]
+backward = [ 6 ]
+right = [ 6 ]
+left = [ 1 ]

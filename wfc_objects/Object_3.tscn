@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Kenny_skatepark_assets/blockCornerLarge.dae" type="PackedScene" id=1]
+[ext_resource path="res://Rule.gd" type="Script" id=2]
+[ext_resource path="res://Kenny_skatepark_assets/blockSnowRoundedLow.dae" type="PackedScene" id=3]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="blockCornerLarge" parent="." instance=ExtResource( 1 )]
+visible = false
+script = ExtResource( 2 )
+up = [ 2 ]
+down = [ 2 ]
+forward = [ 2 ]
+backward = [ 2 ]
+right = [ 2 ]
+left = [ 2 ]
+
+[node name="blockSnowRoundedLow" parent="blockCornerLarge" instance=ExtResource( 3 )]
+visible = false

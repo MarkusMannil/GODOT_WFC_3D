@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Plugin/Rules.gd" type="Script" id=1]
+[ext_resource path="res://kenney_modular-buildings/building-door-window-narrow.glb" type="PackedScene" id=2]
+
+[node name="building-door-window-narrow" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+up = [ 1, 2 ]
+down = [ 1 ]
+forward = [ 1 ]
+backward = [ 1 ]
+right = [ 3 ]
+left = [ 1 ]
+allow_add_90_y = true
+allow_sub_90_y = true
+allow_add_180_y = true
+
+[node name="building-door-window-narrow" parent="." index="0"]
+__meta__ = {
+"_edit_group_": true
+}
